@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img(src='dist/logo.png')
+    img(src='https://josegranado.github.io/kanesmusic/dist/logo.png')
     h1 KanesMusic
     select(v-model="selectedCountry")
       country(v-for="country in countries" :country="country" :key="country.topLevelDomain.alpha2Code")
