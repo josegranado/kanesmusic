@@ -53,6 +53,7 @@ export default {
   mounted ()
   {
     this.refreshCountries() 
+    this.refreshArtists()
   },
   watch: {
     selectedCountry ()
