@@ -15,6 +15,7 @@ function getCountries()
 
 function getArtists(country)
 {
+    country = country.toLowerCase();
     const url = URL.replace(':country', country)
     return fetch(url)
         .then( res =>  res.json() )
