@@ -44,12 +44,9 @@ export default {
       this.artists = [];
       getArtists(self.selectedCountry)
         .then( function (artists)
-        {
-          setTimeout( () => 
-          {
+        {  
             self.loading = false;
             self.artists = artists;
-            }, 2000);
         })
     }
   },
