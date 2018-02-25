@@ -2,7 +2,7 @@ import config from './config';
 
 const API_KEY = config.apiKey;
 
-const URL = `http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${API_KEY}&format=json`;
+const URL = `https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${API_KEY}&format=json`;
 
 const URL_COUNTRIES = `https://restcountries.eu/rest/v2/all`;
 
