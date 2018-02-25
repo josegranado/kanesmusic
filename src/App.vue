@@ -43,10 +43,10 @@ export default {
       this.loading = true;
       this.artists = [];
       getArtists(self.selectedCountry)
-        .then( function (artists)
+        .then( artists => 
         {  
-            self.loading = false;
-            self.artists = artists;
+          self.loading = false;
+          self.artists = artists;
         })
     }
   },
