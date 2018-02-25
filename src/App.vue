@@ -36,6 +36,7 @@ export default {
       const self = this;
       getCountries()
         .then( countries => self.countries = countries )
+        .then( ev => self.refreshArtists() )
     },
     refreshArtists()
     {
